@@ -1,4 +1,7 @@
+
+
 自己的做法：
+Runtime: 12 ms, faster than 97.60% of Java online submissions for Sort Array By Parity.
 ```
 class Solution {
     public int[] sortArrayByParity(int[] A) {
