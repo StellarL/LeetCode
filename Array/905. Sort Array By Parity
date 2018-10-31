@@ -8,6 +8,8 @@ class Solution {
             while(pre < A.length && ((A[pre] & 1) == 0) ){
                 pre++;
             }//找到奇数
+            if(pre >= A.length)
+                break;//全为偶数
             while((suf >= 0 &&( A[suf] & 1) == 1 )){
                 suf--;
             }//找到偶数
