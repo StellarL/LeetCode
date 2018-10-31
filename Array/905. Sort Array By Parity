@@ -1,0 +1,30 @@
+自己的做法：
+```
+class Solution {
+    public int[] sortArrayByParity(int[] A) {
+        //从前往后，找到奇数，从后往前，找到偶数，交换
+        int pre = 0, suf = A.length-1;
+        while(true){
+            while(pre < A.length && ((A[pre] & 1) == 0) ){
+                pre++;
+            }//找到奇数
+            while((suf >= 0 &&( A[suf] & 1) == 1 )){
+                suf--;
+            }//找到偶数
+            
+            if(pre >= suf){
+                break;
+            }
+            
+            int tag = A[pre];
+            A[pre] = A[suf];
+            A[suf] = tag;
+
+            tag++;
+            suf--;
+        }
+        return A;
+    }
+}
+```
+
