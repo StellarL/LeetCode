@@ -1,6 +1,5 @@
 
-'
-class Solution {
+`class Solution {
     public int arrayPairSum(int[] nums) {
         //排序
         Arrays.sort(nums);
@@ -14,5 +13,4 @@ class Solution {
         }        
         return sum;
     }
-}
-'
+}`
